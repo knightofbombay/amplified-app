@@ -1,0 +1,39 @@
+# this is an auto generated file. This will be overwritten
+query GetAttraction($id: ID!) {
+  getAttraction(id: $id) {
+    id
+    name
+    description
+    city
+  }
+}
+query ListAttractions(
+  $filter: TableAttractionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAttractions(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      description
+      city
+    }
+    nextToken
+  }
+}
+query QueryAttractionsByIdNameIndex(
+  $name: String!
+  $first: Int
+  $after: String
+) {
+  queryAttractionsByIdNameIndex(name: $name, first: $first, after: $after) {
+    items {
+      id
+      name
+      description
+      city
+    }
+    nextToken
+  }
+}

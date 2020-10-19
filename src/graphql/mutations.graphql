@@ -1,0 +1,25 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateAttraction($input: CreateAttractionInput!) {
+  createAttraction(input: $input) {
+    id
+    name
+    description
+    city
+  }
+}
+mutation UpdateAttraction($input: UpdateAttractionInput!) {
+  updateAttraction(input: $input) {
+    id
+    name
+    description
+    city
+  }
+}
+mutation DeleteAttraction($input: DeleteAttractionInput!) {
+  deleteAttraction(input: $input) {
+    id
+    name
+    description
+    city
+  }
+}

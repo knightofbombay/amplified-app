@@ -1,0 +1,55 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateAttraction(
+  $id: ID
+  $name: String
+  $description: String
+  $city: String
+) {
+  onCreateAttraction(
+    id: $id
+    name: $name
+    description: $description
+    city: $city
+  ) {
+    id
+    name
+    description
+    city
+  }
+}
+subscription OnUpdateAttraction(
+  $id: ID
+  $name: String
+  $description: String
+  $city: String
+) {
+  onUpdateAttraction(
+    id: $id
+    name: $name
+    description: $description
+    city: $city
+  ) {
+    id
+    name
+    description
+    city
+  }
+}
+subscription OnDeleteAttraction(
+  $id: ID
+  $name: String
+  $description: String
+  $city: String
+) {
+  onDeleteAttraction(
+    id: $id
+    name: $name
+    description: $description
+    city: $city
+  ) {
+    id
+    name
+    description
+    city
+  }
+}

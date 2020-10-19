@@ -1,0 +1,18 @@
+projects:
+  Attraction App:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: angular
+        generatedFileName: src/app/API.service.ts
+        docsFilePath: src/graphql
+        region: us-east-1
+        apiId: bl4dlvm6g5dcnakwnstdrabtjq
+        maxDepth: 2
+extensions:
+  amplify:
+    version: 3
