@@ -7,6 +7,14 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<amplify-authenticator>
+  <div>
+    Restaurants App
+    <amplify-sign-out></amplify-sign-out>
+  </div>
+  <!-- previous code -->
+</amplify-authenticator>
+
 <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -340,9 +348,10 @@
 
   <div *ngFor="let attraction of attractions">
     <div>{{ attraction.city }} {{ attraction.name }} {{ attraction.description }}</div>
-    <td></td>
+    <br/>
   </div>
-
+  <br/>
+  <br/>
   <div class="form-body">
     <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
       <div>
